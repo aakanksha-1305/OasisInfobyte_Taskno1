@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url("BackgroundImg.jpg");
+            background-size: cover;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+
+        }
+        .Menu a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+        .Menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid orange;
+            transition: 0.4s linear;
+        }
+
+        .Menu a:hover:before{
+            width: 90%;
+        }
+        
+        .Register a{
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: orange;
+            border-radius: 5px;
+            transition: 0.4s linear;
+        }
+
+        .Register a:hover{
+            background: transparent;
+            border: 1px solid red;
+        }
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        
+        .h-txt h1{
+            font-size: 3.5em;
+        }
+        
+        .h-txt a{
+            text-decoration: none;
+            
+            color: black;
+            padding: 15px,25px;
+            letter-spacing: 5px;
+            transition: 0.4s linear;
+        }
+        .h-txt a:hover{
+        background: transparent;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+               
+            </div>
+            <div class="Menu">
+                <a href="#"><b><i>Home</i></b></a>
+                <a href="#"><b><i>About Us</i></b></a>
+                <a href="#"><b><i>Service</i></b></a>
+                <a href="#"><b><i>Contact </i></b></a>
+            </div>
+            <div class="Book Your Seat">
+                <button type="Book Your Seat" style="background-color: skyblue;  width: 178px;
+                height: 35px;
+                font-size: 20px;">Book Your Seat</button>
+            
+
+                
+            </div>
+        </nav>
+        <section class="h-txt">
+            
+            <h1><b> TIME TO TRAVEL</b></h1>
+            <br>
+            <a href="#"><b>"Your Journey Starts Here, Unlock Timeless Adventures and Unforgettable Moments with Us!"</b> </a>
+        </section>
+</header>   
+</body>
+</html>
